@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: medium;     --- DEFAULT */
+    display: flex;
+    background-color: #414141;
+}
+ul{
+    list-style: none;
+}
+li{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+li:hover{
+    background-color: #5e5e5e;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+nav{
+    /* margin-right: 190px; */
+    width: 250px;
+    height: 100%;
+    color: white;
+    background-color: #383838;
+}
+nav div{
+    background-color: #333;
+    width: 250px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav div a{
+    font-size: x-large;
+    color: white;
+    text-decoration: none;
+}
+nav ul{
+    background-color: #383838;
+}
+.navR ul{
+    background-color: #252525;
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    left: 250px;
+    top: 0px;
+    list-style: none;
+    visibility: hidden;
+}
+.navR ul li{
+    margin-top: 10px;
+    padding: 10px;
+}
+.navR ul li:hover{
+    background-color: #5e5e5e;
+}
+.navR:hover ul{
+    visibility: visible;
+}
+.artykulpelny{
+    width: 100%;
+    margin: 20px;
+    margin-left: 310px;
+    margin-right: 310px;
+    text-align: center;
+    font-size: larger;
+}
+article{
+    letter-spacing: 1.5px;
+    width: 100%;
+    margin: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    /* margin-left: 310px; */
+    text-align: center;
+    font-size: larger;
+    color: white;
+}
+.navI{
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: larger;
+    font-weight: bold;
+}
+article h1{
+    font-size: 76px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #333;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    /* justify-content: center; */
+    align-content: center;
+}
+.logo{
+    border-radius: 50%;
+}
+article div{
+    display:  flex;
+}
+article div img{
+    margin-right: 30px;
+}
+article ol{
+    width: 100%;
+}
+li a{
+    display: inline;
+}
+ul a{
+    display: inline;
+}
+/* Linki do podstron */
+@media screen and (min-width:551px) and (max-width: 1200px) {
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   li{
+    margin: 0px;
+    height: 100%;
+    font-weight: bold;
+   }
+   #container{
+    display: block;
+    font-size: medium;
+   }
+   aside{
+    width: 100%;
+    height: 130px;
+    display: block;
+   }
+   nav{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+   }
+   nav div{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-weight: bolder;
+   }
+   nav ul{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   }
+   .navR:hover ul{
+    visibility: hidden;
+    }
+    article{
+        letter-spacing: 1px;
+        padding: 0px;
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+        font-size: medium;
+    }
+    article p{
+        overflow: scroll;
+    }
+    article h1{
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    article div{
+        display:  flex;
+    }
+    article div img{
+        margin-right: 30px;
+    }
+    article ol{
+        width: 100%;
+        height: 100%;
+    }
+    .pin{
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+       a img{
+        display: none;
+       }
+       li{
+        margin: 0px;
+        height: 100%;
+        font-weight: bold;
+       }
+       body{
+        min-width: 100vw;
+        max-height: 100vw;
+       }
+       #container{
+        min-width: 100%;
+        display: block;
+        font-size: small;
+       }
+       aside{
+        width: 100%;
+        height: 130px;
+        display: block;
+       }
+       nav{
+        width: 100%;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+       }
+       nav div{
+        margin-bottom: 10px;
+        margin-top: 20px;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        font-weight: bolder;
+       }
+       nav ul{
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+       }
+       .navR ul{
+        width: 0;
+        height: 0;
+        display: none;
+        }
+        article{
+            letter-spacing: 1px;
+            padding: 10px;
+            width: 100%;
+            margin: 0px;
+            text-align: center;
+            font-size: small;
+        }
+        article p{
+            overflow: scroll;
+        }
+        article h1{
+            font-size: larger;
+            font-weight: bold;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        article div{
+            display:  flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        article div img{
+            margin-right: 0px;
+        }
+        article ol{
+            width: 100%;
+        }
+        .pin{
+            width: 300px;
+            height: 300px;
+        }
+ }
